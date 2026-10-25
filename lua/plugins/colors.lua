@@ -1,26 +1,26 @@
 return {
-    {
-	"catppuccin/nvim",
-	name = "catppuccin",
-	priority = 1000,
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
 
-	config = function()
-	    require("catppuccin").setup({
-		flavour = "mocha",
-		transparent_background = true,
-	    })
+    config = function()
+      require("catppuccin").setup({
+	flavour = "mocha",
+	transparent_background = true,
+      })
 
-	    vim.cmd.colorscheme "catppuccin"
+      vim.cmd.colorscheme "catppuccin"
 
-	end,
+    end,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
     },
-    {
-	"nvim-lualine/lualine.nvim",
-	dependencies = {
-	    "nvim-tree/nvim-web-devicons",
-	},
-	opts = {
-	    theme = "catppuccin",
-	}
-    },
+    opts = {
+      theme = "catppuccin",
+    }
+  },
 }
