@@ -15,3 +15,4 @@ set.cursorline = true
 
 -- Keep cursor at least 8 rows from top/bot when scrolling
 set.scrolloff = 8
+
