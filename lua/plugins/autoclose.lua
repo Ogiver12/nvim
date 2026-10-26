@@ -1,13 +1,13 @@
 return {
-    {
-	'm4xshen/autoclose.nvim',
-	name = 'autoclose',
+  {
+    'm4xshen/autoclose.nvim',
+    name = 'autoclose',
 
-	config = function()
-	    require("autoclose").setup({
-	    })
+    config = function()
+      require("autoclose").setup({
+      })
 
-	end,
-    },
+    end,
+  },
 }
 
